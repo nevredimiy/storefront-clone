@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .toggle-burger {
+        @apply [&>span]:bg-transparent [&>span::before]:translate-y-0 [&>span::before]:rotate-45 [&>span::after]:translate-y-0 [&>span::after]:-rotate-45 [&>span]:rotate-[720deg]
+    }
+
+}
+
+
+
+
