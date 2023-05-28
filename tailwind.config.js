@@ -2,11 +2,16 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
-
+   
     screens: {
-      'ssm': '390px'
+      ssm: '390px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      xxl: '1536px'
     },
-
+    
     container: {
       center: true,
       padding: {
@@ -18,6 +23,9 @@ module.exports = {
         },
     },
     extend: {
+      theme: {
+        
+      },
       keyframes: {
         'orbit-menu': {
           'to': { transform: 'rotate(360deg)' },
