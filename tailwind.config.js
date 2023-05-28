@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
+
+    screens: {
+      'ssm': '390px'
+    },
+
     container: {
       center: true,
       padding: {

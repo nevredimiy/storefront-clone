@@ -28,7 +28,7 @@
 </head>
 <body>
     <div id="page">
-        <header class="bg-slate-100 text-sm lg:text-base">
+        <header class="text-sm lg:text-base">
             <div class="container">
                 <div id="header-top" class="flex items-center justify-between text-center relative z-20">
                     <a class="block w-2/5 md:w-1/5 py-5 mb-4" href="/" rel="home">
@@ -75,7 +75,7 @@
                 </div>
                 <div id="header-bottom" class="flex overflow-hidden">
                     <nav data-menu
-                        class="invisible absolute z-10 w-full bg-slate-100 py-10 top-20 left-0 flex-auto md:visible md:static md:p-0 -translate-y-full transition-transform md:translate-y-0">
+                        class="invisible absolute z-10 w-full bg-slate-50 md:bg-none py-10 top-24 left-0 flex-auto md:visible md:static md:p-0 -translate-y-full transition-transform md:translate-y-0">
                         <ul
                             class="flex flex-col md:flex-row md:items-center gap-4 flex-wrap items-center mb-4 text-center text-3xl md:text-sm">
                             <li class="group w-full hover:bg-gray-500 md:w-auto py-2"><a
@@ -93,36 +93,42 @@
                                     class="group-hover:text-white p-2 transition-colors" href="">Акція розпродаж</a>
                             </li>
                         </ul>
-                    </nav>
-                    <ul class="hidden w-1/4 mb-4 md:block">
-                        <li>
-                            <a class="flex gap-2" href="#" title="Переглянути кошик">
-                                0,00 грн<span>0 товарів</span>
-                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                        </navssm:>
+                        <ul class="hidden w-1/4 mb-4 md pb-4:block">
+                            <li>
+                                <a class="flex gap-2" hpb-2ref="#" title="Переглянути кошик">
+                                    0,00 грн<span class="">0 товарів</span>
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                 </div>
             </div>
         </header>
         <div class="" id="content">
             <!-- Hero for home page -->
-            <section class="py-5 bg-gradient-to-tr from-cyan-100 to-blue-100">
+            <section class="py-5 bg-gradient-to-b from-white via-blue-100 to-slate-50">
                 <div class="container md:flex md:items-center md:gap-10">
                     <div class="text-center p-2 md:w-1/2">
-                        <h1 class="text-2xl py-4 sm:py-6">Ювелірні вироби зі срібла</h1>
-                        <p class="pb-4 last:pb-0 sm:pb-6 truncate hover:text-clip">На нашому сайті ви знайдете
+                        <h1 class="element-animation text-2xl py-4 sm:py-6 transition-all duration-500">Ювелірні вироби
+                            зі срібла</h1>
+                        <p
+                            class="element-animation pb-4 last:pb-0 sm:pb-6 truncate hover:text-clip transition-all duration-500 delay-100">
+                            На
+                            нашому сайті ви
+                            знайдете
                             різноманітні ювелірні
                             прикраси, які зроблені у більшості зі срібла. Більш за все це підвіси. Вони представлені на
                             різну тематику.</p>
-                        <a class="uppercase px-4 py-2 font-semibold text-sm bg-slate-500 text-white rounded-none shadow-sm hover:bg-slate-600 active:bg-slate-700"
+                        <a class="transition-all duration-500 element-animation uppercase px-4 py-2 font-semibold text-sm bg-slate-500 text-white rounded-none shadow-sm hover:bg-slate-600 active:bg-slate-700"
                             href="">Дізнатися більше</a>
                     </div>
-                    <nav class="relative w-96 h-96 mx-auto flex justify-center items-center md:w-1/2">
+                    <nav
+                        class="relative sm:w-96 sm:h-96 lg:w-auto lg:h-auto mx-auto flex justify-center items-center md:w-1/2 element-animation transition-all duration-700 delay-300 ">
                         <div
                             class="select-none touch-none absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-200 rounded-full p-5 cursor-pointer hover:bg-slate-300 hover:border-2 hover:border-slate-400 active:bg-slate-400">
                             <svg width="64" height="64" version="1.1" viewBox="0 0 16.933 16.933"
@@ -351,6 +357,47 @@
                     </nav>
                 </div>
             </section>
+            <article>
+                <div class="container">
+                    <h2 class="p-6">Нові надходження</h2>
+                    <div class="">
+                        <ul class="flex flex-wrap">
+                            <li class="text-center ssm:w-1/2 md:w-1/4 md:px-2">
+                                <a class="block pb-4" href="#">
+                                    <img class="pb-6" src="./img/newproducts/p-29dr8-1.jpg" alt="Ерцгамма">
+                                    <h3 class="pb-2">Зірка Ерцгамми</h3>
+                                    <span class="">860 грн</span>
+                                </a>
+                                <a class="btn" href="#">Додати до кошика</a>
+                            </li>
+                            <li class="text-center ssm:w-1/2 md:w-1/4 md:px-2">
+                                <a class="block pb-4" href="#">
+                                    <img class="pb-6" src="./img/newproducts/kr205-3.jpeg" alt="Хрестик">
+                                    <h3 class="pb-2">Срібний хрест</h3>
+                                    <span class="">340 грн</span>
+                                </a>
+                                <a class="btn" href="#">Додати до кошика</a>
+                            </li>
+                            <li class="text-center ssm:w-1/2 md:w-1/4 md:px-2">
+                                <a class="block pb-4" href="#">
+                                    <img class="pb-6" src="./img/newproducts/pf08-1.jpeg" alt="Меч">
+                                    <h3 class="pb-2">Срібний меч</h3>
+                                    <span class="">320 грн</span>
+                                </a>
+                                <a class="btn" href="#">Додати до кошика</a>
+                            </li>
+                            <li class="text-center ssm:w-1/2 md:w-1/4 md:px-2">
+                                <a class="block pb-4" href="#">
+                                    <img class="pb-6" src="./img/newproducts/mp05-gitara-1.jpeg" alt="Гітара">
+                                    <h3 class="pb-2">Гітара-череп</h3>
+                                    <span class="">640 грн</span>
+                                </a>
+                                <a class="btn" href="#">Додати до кошика</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
         </div>
     </div>
 
