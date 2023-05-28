@@ -677,12 +677,16 @@ video {
   height: 2.5rem;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-12 {
+  height: 3rem;
 }
 
-.h-72 {
-  height: 18rem;
+.h-56 {
+  height: 14rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-8 {
@@ -709,16 +713,20 @@ video {
   width: 25%;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-2\/5 {
   width: 40%;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-56 {
+  width: 14rem;
 }
 
-.w-72 {
-  width: 18rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-8 {
@@ -745,8 +753,8 @@ video {
   flex: 1 1 auto;
 }
 
-.origin-\[9rem\] {
-  transform-origin: 9rem;
+.origin-\[7rem\] {
+  transform-origin: 7rem;
 }
 
 .-translate-x-1\/2 {
@@ -923,6 +931,10 @@ video {
   border-radius: 0px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1034,12 +1046,12 @@ video {
   padding: 0.5rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-4 {
@@ -1138,6 +1150,18 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1221,8 +1245,15 @@ video {
 }
 
 h2 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 390px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 .element-animation {
@@ -1385,8 +1416,24 @@ h2 {
 }
 
 @media (min-width: 390px) {
+  .ssm\:h-72 {
+    height: 18rem;
+  }
+
   .ssm\:w-1\/2 {
     width: 50%;
+  }
+
+  .ssm\:w-72 {
+    width: 18rem;
+  }
+
+  .ssm\:origin-\[9rem\] {
+    transform-origin: 9rem;
+  }
+
+  .ssm\:p-5 {
+    padding: 1.25rem;
   }
 }
 
@@ -1463,8 +1510,8 @@ h2 {
     gap: 2.5rem;
   }
 
-  .md\:bg-none {
-    background-image: none;
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
   .md\:p-0 {
