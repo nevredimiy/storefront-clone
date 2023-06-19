@@ -26,30 +26,59 @@
     <title>Lar Pradeda</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="font-sans">
     <div id="page">
         <header class="text-sm lg:text-base">
             <div class="container">
                 <div id="header-top" class="flex items-center justify-between text-center relative z-20">
                     <a class="block w-2/5 md:w-1/5 py-5 mb-4" href="/" rel="home">
-                        <img width="235" height="55"
-                            class="h-auto max-w-[230px] max-h-none w-full  border rounded-lg p-2 shadow-lg"
+                        <img width="235" height="55" class="h-auto max-w-[230px] max-h-none w-full"
                             src="./img/logo470-110.svg" alt="Lar Pradeda">
                     </a>
                     <nav class="hidden flex-auto md:block" role="navigation" aria-label="Дополнительная навигация">
-                        <ul class="flex items-center gap-4 flex-wrap justify-center">
-                            <li class="group"><a
+                        <ul class="menu">
+                            <li class="menu-item group"><a
                                     class="group-hover:text-white group-hover:bg-gray-500 p-2 transition-colors"
                                     href=" #">Напиши
                                     нам</a></li>
-                            <li class="group"><a class="group-hover:text-white group-hover:bg-gray-500 p-2" href="#">О
+                            <li class="menu-item group"><a class="group-hover:text-white group-hover:bg-gray-500 p-2"
+                                    href="#">О
                                     нас</a></li>
-                            <li class="group"><a class="group-hover:text-white group-hover:bg-gray-500 p-2"
-                                    href="#">Телефони</a>
+                            <li class="menu-item group menu-item-has-children">
+                                <a class="menu-link" href="#">Телефони</a>
+                                <ul class="sub-menu absolute py-2 bg-gray-500 border border-gray-200 top-full 
+                                    invisible opacity-0 pointer-events-none transition-all min-w-[180px]">
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="tel:+380965582148">+38 096 558 21 48</a>
+                                    </li>
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="tel:+380965582148">+38 096 558 21 48</a>
+                                    </li>
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="tel:+380965582148">+38 096 558 21 48</a>
+                                    </li>
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="tel:+380965582148">+38 096 558 21 48</a>
+                                    </li>
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="tel:+380965582148">+38 096 558 21 48</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="group"><a class="group-hover:text-white group-hover:bg-gray-500 p-2"
-                                    href="#">Особистий
-                                    кабінет</a></li>
+                            <li class="menu-item group menu-item-has-children">
+                                <a class="group-hover:text-white group-hover:bg-gray-500 p-2" href="#">Особистий
+                                    кабінет
+                                </a>
+                                <ul class="sub-menu absolute py-2 bg-gray-500 border border-gray-200 top-full 
+                                    invisible opacity-0 pointer-events-none transition-all min-w-[180px]">
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="tel:+380965582148">Авторизуватися</a>
+                                    </li>
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="tel:+380965582148">Зареєструватися</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div class="hidden md:block w-1/4">
@@ -74,39 +103,143 @@
                         "></span>
                     </button>
                 </div>
-                <div id="header-bottom" class="flex overflow-hidden">
+                <div id="header-bottom" class="flex justify-between">
                     <nav data-menu
-                        class="invisible absolute z-10 w-full bg-slate-50 md:bg-transparent py-10 top-24 left-0 flex-auto md:visible md:static md:p-0 -translate-y-full transition-transform md:translate-y-0">
-                        <ul
-                            class="flex flex-col md:flex-row md:items-center gap-4 flex-wrap items-center mb-4 text-center text-3xl md:text-sm">
-                            <li class="group w-full hover:bg-gray-500 md:w-auto py-2"><a
-                                    class="group-hover:text-white p-2 transition-colors" href="">Головна</a></li>
-                            <li class="group w-full hover:bg-gray-500 md:w-auto py-2"><a
-                                    class="group-hover:text-white p-2 transition-colors" href="">Категорії товарів</a>
+                        class="invisible absolute z-10 w-full bg-slate-50 md:bg-transparent py-10 top-24 left-0 flex-auto flex-wrap md:visible md:static md:p-0 -translate-y-full transition-transform md:translate-y-0 overflow-hidden md:overflow-visible">
+                        <ul class="menu">
+                            <li class="menu-item group"><a class="menu-link" href="">Головна</a></li>
+                            <li class="menu-item group"><a class="menu-link" href="">Категорії товарів</a>
                             </li>
-                            <li class="group w-full hover:bg-gray-500 md:w-auto py-2"><a
-                                    class="group-hover:text-white p-2 transition-colors" href="">Усі
-                                    товари</a></li>
-                            <li class="group w-full hover:bg-gray-500 md:w-auto py-2"><a
-                                    class="group-hover:text-white p-2 transition-colors" href="">Хіти
-                                    продаж</a></li>
-                            <li class="group w-full hover:bg-gray-500 md:w-auto py-2"><a
-                                    class="group-hover:text-white p-2 transition-colors" href="">Акція розпродаж</a>
-                            </li>
-                        </ul>
-                        </navssm:>
-                        <ul class="hidden w-1/4 mb-4 md pb-4:block">
-                            <li>
-                                <a class="flex gap-2" hpb-2ref="#" title="Переглянути кошик">
-                                    0,00 грн<span class="">0 товарів</span>
-                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                                    </svg>
+                            <li class="menu-item group menu-item-has-children">
+                                <a class="menu-link" href="">Усі
+                                    товари
                                 </a>
+                                <svg class="w-4 h-4 transition-all" width="24" height="24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                                <ul class="sub-menu absolute py-2 bg-gray-500 border border-gray-200 top-full 
+                                    invisible opacity-0 pointer-events-none transition-all min-w-[180px]">
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="#">Підвіси</a>
+                                    </li>
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="#">Сережки</a>
+                                    </li>
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="#">Брелки</a>
+                                    </li>
+                                    <li class="menu-item group">
+                                        <a class="menu-link" href="#">Браслети</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item group"><a class="menu-link" href="">Хіти
+                                    продаж</a></li>
+                            <li class="menu-item group"><a class="menu-link" href="">Акція розпродаж</a>
                             </li>
                         </ul>
+                    </nav>
+                    <div class="group hidden flex-shrink-0 w-1/4 md:block pb-4 relative cursor-pointer">
+                        <a class="flex items-center gap-2 hover:opacity-70" href="#" title="Переглянути кошик">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+                            <div class="rounded-full w-7 h-7 text-center border-2 border-gray-800 leading-6 text-sm">10
+                            </div>
+                        </a>
+                        <div
+                            class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all absolute left-0 z-20 w-full bg-white border border-black mt-4">
+                            <ul class="">
+                                <li class="woocommerce-mini-cart-item">
+                                    <a class="remove_from_cart_button" href="">
+                                        <svg class="w-6 h-6 hover:fill-gray-200" width="24" height="24"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </a>
+                                    <a class="hover:text-gray-500" href="">
+                                        <img class="attachment-woocommerce_thumbnail" width="324" height="324"
+                                            src="./img/blin-na-shtangu.jpeg" alt="Млин для штанги">
+                                        Підвіска Млин для штанги (30мм 11г)
+                                    </a>
+                                    <span class="quantity">1 ×
+                                        <bdi>
+                                            2100&nbsp;
+                                            <span>₴</span>
+                                        </bdi>
+                                    </span>
+                                </li>
+                                <li class="px-5 py-3 grid">
+                                    <a class="pr-2 flex items-center" href="">
+                                        <svg class="w-6 h-6 hover:fill-gray-200" width="24" height="24"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+
+                                    </a>
+                                    <a class="hover:text-gray-500" href="">
+
+                                        <img class="max-w-[3em] float-right" width="324" height="324"
+                                            src="./img/blin-na-shtangu.jpeg" alt="Млин для штанги">
+                                        Підвіска Млин для штанги (30мм 11г)
+                                    </a>
+                                    <span class="ml-6 col-span-2">1 ×
+                                        <bdi>
+                                            2100&nbsp;
+                                            <span>₴</span>
+                                        </bdi>
+                                    </span>
+                                </li>
+                                <li class="px-5 py-3 grid">
+                                    <a class="pr-2 flex items-center" href="">
+                                        <svg class="w-6 h-6 hover:fill-gray-200" width="24" height="24"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+
+                                    </a>
+                                    <a class="hover:text-gray-500" href="">
+
+                                        <img class="max-w-[3em] float-right" width="324" height="324"
+                                            src="./img/blin-na-shtangu.jpeg" alt="Млин для штанги">
+                                        Підвіска Млин для штанги (30мм 11г)
+                                    </a>
+                                    <span class="ml-6 col-span-2">1 ×
+                                        <bdi>
+                                            2100&nbsp;
+                                            <span>₴</span>
+                                        </bdi>
+                                    </span>
+                                </li>
+                            </ul>
+                            <p class="woocommerce-mini-cart__total">
+                                <strong>Разом: </strong>
+                                <span>
+                                    <bdi>
+                                        <span>₴</span>
+                                        300
+                                    </bdi>
+                                </span>
+                            </p>
+                            <p class="woocommerce-mini-cart__buttons">
+                                <a href="" class="wp-element-button">До
+                                    кошика</a>
+                                <a href="" class="wp-element-button">Оформити
+                                    замовлення</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -131,8 +264,9 @@
                     <nav
                         class="relative sm:w-96 sm:h-96 lg:w-auto lg:h-auto mx-auto flex justify-center items-center md:w-1/2 element-animation transition-all duration-700 delay-300 ">
                         <div
-                            class="select-none touch-none absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-200 rounded-full p-2 ssm:p-5 cursor-pointer hover:bg-slate-300 hover:border-2 hover:border-slate-400 active:bg-slate-400">
-                            <svg class="w-12 h-12" width="64" height="64" version="1.1" viewBox="0 0 16.933 16.933"
+                            class="group transition-all select-none touch-none absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-200 rounded-full p-2 ssm:p-5 cursor-pointer hover:bg-slate-300 hover:border-2 hover:border-slate-400 hover:p-6 active:bg-slate-400">
+                            <svg class="transition-all group-hover:w-14 group-hover:h-14 w-12 h-12" width="64"
+                                height="64" version="1.1" viewBox="0 0 16.933 16.933"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="-41.316" y="-12.141" width="115.83" height="28.956" ry=".0062204"
                                     display="none" stroke-linecap="round" stroke-linejoin="round"
@@ -142,11 +276,12 @@
                                     stroke-width=".041344" />
                             </svg>
                         </div>
-                        <ul class="relative w-56 h-56 ssm:w-72 ssm:h-72 flex justify-center items-center mx-auto">
+                        <ul data-orbit
+                            class="relative w-56 h-56 ssm:w-72 ssm:h-72 flex justify-center items-center mx-auto">
                             <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
-                                <a class="relative flex justify-center items-center bg-red-200 rounded-full p-2 group-hover:p-3 transition-all"
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="#">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <path
@@ -155,15 +290,14 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-active:opacity-100 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-active:opacity-100 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Брелки</div>
                                 </a>
                             </li>
-                            <li
-                                class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem] rotate-[36deg]">
-                                <a class="relative flex justify-center items-center bg-orange-200 rounded-full p-2 group-hover:p-3 transition-all -rotate-[36deg]"
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <g transform="matrix(.037713 0 0 .037713 5.3271 141.68)">
@@ -173,16 +307,15 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Ланцюги</div>
                                 </a>
 
                             </li>
-                            <li
-                                class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem] rotate-[72deg]">
-                                <a class="relative flex justify-center items-center bg-amber-200 rounded-full p-2 group-hover:p-3 transition-all -rotate-[72deg]"
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <path
@@ -191,15 +324,14 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Каблучки</div>
                                 </a>
                             </li>
-                            <li
-                                class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem] rotate-[108deg]">
-                                <a class="relative flex justify-center items-center bg-lime-200 rounded-full p-2 group-hover:p-3 transition-all -rotate-[108deg]"
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <g transform="matrix(.0099195 0 0 .0099195 6.6679 143.02)"
@@ -228,15 +360,14 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Сережки</div>
                                 </a>
                             </li>
-                            <li
-                                class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem] rotate-[144deg]">
-                                <a class="relative flex justify-center items-center bg-emerald-200 rounded-full p-2 group-hover:p-3 transition-all -rotate-[144deg]"
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <path
@@ -245,15 +376,14 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Ложки</div>
                                 </a>
                             </li>
-                            <li
-                                class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem] rotate-[180deg]">
-                                <a class="relative flex justify-center items-center bg-cyan-200 rounded-full p-2 group-hover:p-3 transition-all -rotate-[180deg]"
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <path
@@ -262,15 +392,14 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Підвіси</div>
                                 </a>
                             </li>
-                            <li
-                                class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem] rotate-[216deg]">
-                                <a class="relative flex justify-center items-center bg-blue-200 rounded-full p-2 group-hover:p-3 transition-all -rotate-[216deg]"
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <path
@@ -279,15 +408,14 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Хрестики</div>
                                 </a>
                             </li>
-                            <li
-                                class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem] rotate-[252deg]">
-                                <a class="relative flex justify-center items-center bg-violet-200 rounded-full p-2 group-hover:p-3 transition-all -rotate-[252deg]"
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <path
@@ -296,15 +424,14 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Знак Зодіаку</div>
                                 </a>
                             </li>
-                            <li
-                                class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem] rotate-[288deg]">
-                                <a class="relative flex justify-center items-center bg-fuchsia-200 rounded-full p-2 group-hover:p-3 transition-all -rotate-[288deg]"
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <g transform="matrix(.0023826 0 0 .0023826 6.6612 143.02)"
@@ -324,15 +451,14 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Руни</div>
                                 </a>
                             </li>
-                            <li
-                                class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem] rotate-[324deg]">
-                                <a class="relative flex justify-center items-center bg-yellow-200 rounded-full p-2 group-hover:p-3 transition-all -rotate-[324deg]"
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
                                     href="">
-                                    <svg class="w-9 h-9" width="64" height="64" version="1.1"
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
                                         viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-6.6659 -143.02)">
                                             <g transform="matrix(.03763 0 0 .03763 5.4994 141.86)">
@@ -359,7 +485,84 @@
                                         </g>
                                     </svg>
                                     <div
-                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-xs text-center">
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
+                                        Шнурки</div>
+                                </a>
+                            </li>
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
+                                    href="">
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
+                                        viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="translate(-6.6659 -143.02)">
+                                            <path
+                                                d="m20.679 155.29c0.64687 0 1.1678 0.52093 1.1678 1.1678s-0.52093 1.1678-1.1678 1.1678h-0.17106c-0.78265 0-1.5008-0.41367-1.9536-1.0458 0.42614-0.79221 1.2198-1.2898 2.1246-1.2898zm-5.4241-12.262c-0.72584 0-1.4196 0.32096-1.9053 0.87591-0.98951 1.1297-1.7639 2.4144-2.3012 3.7905-0.63692-1.6342-1.6113-3.1334-2.8877-4.4096-0.1698-0.16976-0.39484-0.25424-0.6196-0.25425-0.22476 0-0.4493 0.0844-0.61908 0.25425-0.33953 0.33961-0.33957 0.8986 0 1.2382 2.0955 2.0956 3.2468 4.8758 3.2468 7.8393v3.2194c0 0.03 0.0016 0.0601 0.0047 0.0894 3e-3 0.0293 0.0076 0.0579 0.01344 0.0863 0.0059 0.0284 0.01311 0.0564 0.0217 0.0837 0.0086 0.0274 0.01831 0.0539 0.02946 0.0801s0.02365 0.0517 0.03721 0.0765 0.02812 0.049 0.04393 0.0724c0.01581 0.0233 0.03273 0.046 0.05064 0.0677 0.01792 0.0217 0.03698 0.0421 0.05684 0.062 0.01987 0.0199 0.04035 0.0389 0.06201 0.0568 0.02167 0.0179 0.04438 0.0348 0.0677 0.0506s0.04754 0.0304 0.07235 0.0439c0.02481 0.0136 0.05033 0.0261 0.07648 0.0372 0.02616 0.0111 0.05275 0.0209 0.0801 0.0295 0.02735 9e-3 0.05533 0.0163 0.08372 0.0222 0.02839 6e-3 0.05754 0.01 0.08682 0.0129 0.02928 3e-3 0.05887 5e-3 0.08888 5e-3 0.03002 0 0.0596-2e-3 0.08888-5e-3s0.05791-7e-3 0.0863-0.0129c0.02839-6e-3 0.05637-0.0136 0.08371-0.0222 0.02735-9e-3 0.05446-0.0183 0.08062-0.0295 0.02615-0.0111 0.05167-0.0237 0.07648-0.0372 0.02481-0.0136 0.04852-0.0281 0.07183-0.0439 0.02332-0.0158 0.04603-0.0327 0.0677-0.0506s0.04266-0.037 0.06253-0.0568c0.01987-0.0199 0.03841-0.0403 0.05633-0.062 0.01791-0.0217 0.03483-0.0444 0.05064-0.0677s0.03089-0.0475 0.04444-0.0724c0.01355-0.0248 0.02554-0.0503 0.03669-0.0765s0.02138-0.0528 0.02997-0.0801c0.0086-0.0273 0.01583-0.0553 0.0217-0.0837 0.0059-0.0284 0.01042-0.057 0.01344-0.0863 3e-3 -0.0293 0.0047-0.0594 0.0047-0.0894v-3.2194c0-2.6881 0.97579-5.282 2.7471-7.3045 0.15719-0.17981 0.37192-0.27802 0.58704-0.27802 0.41755 0 0.75293 0.33487 0.75293 0.75241v8.5168c0 0.88617 0.19799 1.7558 0.55087 2.5626l-0.68678 1.371c-0.07132 0.14228-0.20782 0.22686-0.3669 0.22686h-0.3731c-0.48026 0-0.87592 0.39566-0.87592 0.87592 0 0.48027 0.39565 0.87591 0.87592 0.87591h0.3731c0.82034 0 1.565-0.46003 1.9327-1.1942l0.27595-0.54984c0.76334 0.70061 1.7355 1.1601 2.7941 1.1601h0.17105c1.6072 0 2.9197-1.3125 2.9197-2.9197s-1.3125-2.9192-2.9197-2.9192c-1.0964 0-2.065 0.49198-2.8283 1.2201-0.03664-0.23585-0.09095-0.46931-0.09095-0.70952v-8.5168c0-1.3782-1.1266-2.5042-2.5048-2.5042z"
+                                                style="color:#000000;fill:#000000" />
+                                        </g>
+                                    </svg>
+                                    <div
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
+                                        Знак Зодіаку</div>
+                                </a>
+                            </li>
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
+                                    href="">
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
+                                        viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="translate(-6.6659 -143.02)">
+                                            <g transform="matrix(.0023826 0 0 .0023826 6.6612 143.02)"
+                                                style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision">
+                                                <g>
+                                                    <path class="fil0"
+                                                        d="m3116 3858h-2708c-67 0-121-54-121-121v-3615c0-66 54-120 121-120h2708c67 0 121 54 121 120v3615c0 67-54 121-121 121zm-1354-1191c33 0 61-28 61-61v-517l498-567c22-26 19-64-6-86s-63-20-85 5l-407 464v-651c0-34-28-61-61-61-34 0-61 27-61 61v651l-407-464c-22-25-60-27-86-5-25 22-27 60-5 86l498 567v517c0 33 27 61 61 61zm949 726c33 0 60-27 60-61v-2804c0-34-27-61-60-61h-1898c-34 0-61 27-61 61v2804c0 34 27 61 61 61zm-1837-122v-2682h1776v2682z"
+                                                        style="fill:#000000" />
+                                                    <path class="fil0"
+                                                        d="m6704 3858h-2709c-67 0-121-54-121-121v-3615c0-66 54-120 121-120h2709c66 0 120 54 120 120v3615c0 67-54 121-120 121zm-1611-987c33 0 60-27 60-61v-213l499-567c22-26 19-64-6-86s-64-20-86 5l-407 464v-520l499-567c22-26 19-64-6-86s-64-20-86 5l-407 464v-660c0-33-27-60-60-60-34 0-61 27-61 60v1761c0 34 27 61 61 61zm1205 522c34 0 61-27 61-61v-2804c0-34-27-61-61-61h-1898c-33 0-60 27-60 61v2804c0 34 27 61 60 61zm-1837-122v-2682h1776v2682z"
+                                                        style="fill:#000000" />
+                                                    <path class="fil0"
+                                                        d="m5363 7109h-3615c-67 0-121-54-121-120v-2709c0-67 54-121 121-121h3615c67 0 121 54 121 121v2709c0 66-54 120-121 120zm-1045-974c22 0 42-11 53-30 16-29 6-66-23-83l-671-388 671-387c30-17 39-54 23-83-17-29-54-39-83-23l-732 423-733-423c-18-10-42-10-60 0-19 11-31 31-31 53v881c0 21 12 41 31 52 18 11 42 11 60 0l733-422 732 422c9 6 19 8 30 8zm-1464-836 580 335-580 335zm2104 1345c33 0 60-27 60-61v-1897c0-34-27-61-60-61h-2804c-34 0-61 27-61 61v1897c0 34 27 61 61 61zm-2744-122v-1776h2683v1776z"
+                                                        style="fill:#000000" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <div
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
+                                        Руни</div>
+                                </a>
+                            </li>
+                            <li class="group cursor-pointer absolute left-0 origin-[7rem] ssm:origin-[9rem]">
+                                <a class="relative flex justify-center items-center rounded-full p-2 group-hover:p-3 transition-all"
+                                    href="">
+                                    <svg class="w-6 h-6 ssm:w-9 ssm:h-9" width="64" height="64" version="1.1"
+                                        viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="translate(-6.6659 -143.02)">
+                                            <g transform="matrix(.03763 0 0 .03763 5.4994 141.86)">
+                                                <g
+                                                    id="_x31_33_x2C__necklace_x2C__jewellery_x2C__heart__x2C__love_and_romance_x2C__miscellaneous_x2C__valentines_day_x2C__valentine">
+                                                    <g id="XMLID_14946_">
+                                                        <g id="XMLID_15205_">
+                                                            <path id="XMLID_15232_"
+                                                                d="m173 408.7c-73.433 29.374-9.957 72.299 82.996 72.299 92.169 0 156.87-42.748 82.996-72.299-45.715-18.285-120.28-18.283-165.99 0z" />
+                                                            <path id="XMLID_15231_"
+                                                                d="m271 153.75c0-8.271-6.729-15-15-15s-15 6.729-15 15 6.729 15 15 15 15-6.729 15-15z" />
+                                                            <path id="XMLID_15230_"
+                                                                d="m252.42 224.2c-1.482-1.52-5.797-8.719-15.151-8.719-10.714 0-18.712 8.788-18.712 20.509 0 15.505 15.715 26.011 37.441 45.001 21.814-19.077 37.439-29.541 37.439-45.001 0-17.638-17.558-25.791-28.988-16.95-2.997 2.317-4.115 4.43-4.993 5.274-2.029 1.949-5.157 1.813-7.036-0.114z" />
+                                                            <path id="XMLID_15227_"
+                                                                d="m256 128.75c11.307 0 20.88 7.547 23.958 17.867 20.973-3.759 40.751-12.473 57.754-25.421-23.483-23.191-38.462-54.974-39.763-90.193h-83.899c-1.301 35.219-16.28 67.001-39.762 90.193 17.003 12.947 36.781 21.662 57.754 25.421 3.078-10.32 12.651-17.867 23.958-17.867z" />
+                                                            <path id="XMLID_15226_"
+                                                                d="m223 332.54c-0.262 3.219 1.863 26.288-9.288 55.468 27.216-4.012 57.338-4.015 84.568-1e-3 -11.129-29.13-9.021-52.251-9.281-55.438-21.323 3.913-43.726 4.097-65.999-0.029z" />
+                                                            <path id="XMLID_15208_"
+                                                                d="m426.64 159.76c-30.982-1.16-59.3-12.908-81.447-31.713-18.818 14.702-40.912 24.504-64.366 28.557-1.234 10.781-9.347 19.501-19.832 21.638v31.08c18.187-11.05 42.44 2.244 42.44 26.67 0 20.855-18.862 33.291-40.867 52.539-3.758 3.287-9.386 3.294-13.15-6e-3 -22.038-19.268-40.862-31.717-40.862-52.533 0-24.954 24.773-37.402 42.44-26.67v-31.079c-10.484-2.137-18.598-10.857-19.832-21.638-23.455-4.052-45.548-13.855-64.367-28.557-22.147 18.805-50.465 30.553-81.447 31.713 2.609 91.869 78.156 165.81 170.64 165.81s168.04-73.941 170.64-165.81z" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <div
+                                        class="absolute transition-opacity duration-600 opacity-0 group-hover:opacity-100 group-hover:border-2 group-hover:border-slate-300 bg-slate-200 inset-0 rounded-full flex justify-center items-center text-[0.6em] ssm:text-xs text-center">
                                         Шнурки</div>
                                 </a>
                             </li>
@@ -367,7 +570,48 @@
                     </nav>
                 </div>
             </section>
-            <article>
+            <article class="py-10">
+                <div class="container">
+                    <h2 class="p-6">Нові надходження</h2>
+                    <div class="">
+                        <ul class="flex flex-wrap">
+                            <li class="text-center ssm:w-1/2 md:w-1/4 md:px-2">
+                                <a class="block pb-4" href="#">
+                                    <img class="pb-6" src="./img/newproducts/p-29dr8-1.jpg" alt="Ерцгамма">
+                                    <h3 class="pb-2">Зірка Ерцгамми</h3>
+                                    <span class="">860 грн</span>
+                                </a>
+                                <a class="btn" href="#">Додати до кошика</a>
+                            </li>
+                            <li class="text-center ssm:w-1/2 md:w-1/4 md:px-2">
+                                <a class="block pb-4" href="#">
+                                    <img class="pb-6" src="./img/newproducts/kr205-3.jpeg" alt="Хрестик">
+                                    <h3 class="pb-2">Срібний хрест</h3>
+                                    <span class="">340 грн</span>
+                                </a>
+                                <a class="btn" href="#">Додати до кошика</a>
+                            </li>
+                            <li class="text-center ssm:w-1/2 md:w-1/4 md:px-2">
+                                <a class="block pb-4" href="#">
+                                    <img class="pb-6" src="./img/newproducts/pf08-1.jpeg" alt="Меч">
+                                    <h3 class="pb-2">Срібний меч</h3>
+                                    <span class="">320 грн</span>
+                                </a>
+                                <a class="btn" href="#">Додати до кошика</a>
+                            </li>
+                            <li class="text-center ssm:w-1/2 md:w-1/4 md:px-2">
+                                <a class="block pb-4" href="#">
+                                    <img class="pb-6" src="./img/newproducts/mp05-gitara-1.jpeg" alt="Гітара">
+                                    <h3 class="pb-2">Гітара-череп</h3>
+                                    <span class="">640 грн</span>
+                                </a>
+                                <a class="btn" href="#">Додати до кошика</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="py-10">
                 <div class="container">
                     <h2 class="p-6">Нові надходження</h2>
                     <div class="">
@@ -409,6 +653,28 @@
                 </div>
             </article>
         </div>
+        <footer class="py-10 bg-blue-100">
+            <div class="container">
+                <div class="sm:flex sm:flex-wrap sm:justify-between">
+                    <div class="border-t border-gray-400 pb-6">
+                        <h3>Контакти</h3>
+                        <p>м. Харків</p>
+                        <p><a href="tel:+380993676816">+380 99 36 76 816</a></p>
+                        <p><a href="tel:+380636360299">+380 63 63 60 299</a></p>
+                        <p><a href="mailto:lavkaoberegovemail@gmail.com">lavkaoberegovemail@gmail.com</a></p>
+                    </div>
+                    <div class="border-t border-gray-400 pb-6">
+                        <h3>Категорії</h3>
+                    </div>
+                    <div class="border-t border-gray-400 pb-6">
+                        <h3>Особистий кабінет</h3>
+                    </div>
+                    <div class="border-t border-gray-400 pb-6">
+                        <h3>Інформація</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 

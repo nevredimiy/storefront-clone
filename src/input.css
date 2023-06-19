@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
+    ._active {
+        @apply group-hover:opacity-100 group-hover:visible group-hover:cursor-pointer group-hover:pointer-events-auto
+    }
+
+    .menu-item-has-children {
+        @apply flex items-center
+    }
+
     .toggle-burger {
         @apply [&>span]:bg-transparent [&>span::before]:translate-y-0 [&>span::before]:rotate-45 [&>span::after]:translate-y-0 [&>span::after]:-rotate-45 [&>span]:rotate-[720deg]
     }
@@ -12,10 +21,80 @@
     }
 
     h2 {
-        @apply text-2xl ssm:text-4xl 
+        @apply text-2xl ssm:text-4xl py-2
     }
 
+    h3 {
+        @apply text-xl ssm:text-3xl py-3
+    }
+
+    .menu {
+        @apply flex flex-col md:flex-row md:items-center gap-4 flex-wrap items-center mb-4 text-center text-3xl md:text-sm        
+    }    
+
+    .menu-item {
+        @apply w-full hover:bg-gray-500 md:w-auto py-2
+    }
+
+    .menu-link {
+        @apply group-hover:text-white p-2 transition-colors
+    }
+
+    .sub-menu {
+        @apply absolute py-2 bg-gray-500 border border-gray-200
+    }
+
+    .sub-menu .menu-item {
+        @apply hover:bg-gray-400 p-2 transition-all
+    }
+
+    .sub-menu .menu-link {
+        @apply group-hover:bg-transparent
+    }
+
+    .menu-item-has-children {
+        @apply relative
+    }
+
+    .woocommerce-mini-cart-item {
+        @apply px-5 py-3 grid 
+    }
+
+    .remove_from_cart_button {
+        @apply pr-2
+    }
+
+    .attachment-woocommerce_thumbnail {
+        @apply hover:text-gray-500
+    }
+
+    .attachment-woocommerce_thumbnail {
+        @apply max-w-[3em] float-right
+    }
+
+    .quantity {
+        @apply col-start-2
+    }
+
+    .woocommerce-mini-cart__total {
+        @apply px-5 py-3 border-t border-gray-400
+    }
+
+    .woocommerce-mini-cart__buttons {
+        @apply px-5 py-3 border-t border-gray-400
+    }
+
+    .wp-element-button {
+        @apply my-2 text-center px-4 py-2 bg-gray-500 text-sm text-white shadow-sm hover:bg-gray-600 active:bg-gray-700
+    }
 }
+
+@layer base {
+  html {
+    font-family: Proxima Nova, system-ui, sans-serif;
+  }
+}
+
 
 .element-animation {
     opacity: 0;
